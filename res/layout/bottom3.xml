@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content">
+    <LinearLayout 
+		style="@style/double_fill"
+	   	android:baselineAligned="false" 
+	   	android:background="@drawable/bottom_toolbar_fe">
+		 
+	       <ImageView android:id="@+id/tab_7"
+	        style="@style/double_wrap"  
+	        android:background="@drawable/tab_schedule" 
+	        android:layout_weight="0.1"/>
+			<ImageView
+		        style="@style/double_wrap"  
+		        android:background="@drawable/tab_contact"
+		        android:visibility="invisible"
+		        android:layout_weight="0.1" /> 
+			<ImageView
+		        style="@style/double_wrap"  
+		        android:background="@drawable/tab_contact" 
+		        android:visibility="invisible"
+		        android:layout_weight="0.1"/>  
+	</LinearLayout>
+	
+	<ImageView style="@style/double_wrap"
+        android:background="@drawable/arrow_left" 
+        android:layout_gravity="center"
+		android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true"/>	 
+</RelativeLayout>

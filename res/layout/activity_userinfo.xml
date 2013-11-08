@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+    <LinearLayout style="@style/double_wrap">
+        <ImageView style="@style/double_wrap"
+            android:background="@drawable/dm"
+            android:layout_margin="10dip"/>
+        <LinearLayout style="@style/double_wrap" 
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+        <TextView
+       	 android:id="@+id/tv_name"
+         style="@style/double_wrap"
+         android:text="姓名：阿妹"
+         android:layout_margin="5dip"/>
+        <TextView 
+          android:layout_margin="5dip"
+         android:id="@+id/tv_sex"
+         style="@style/double_wrap"
+         android:text="性别：女"/>
+        
+        <TextView 
+         android:layout_margin="5dip"
+         android:id="@+id/tv_age"
+         style="@style/double_wrap"
+         android:text="年龄：保密"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

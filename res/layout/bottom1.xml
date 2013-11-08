@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+	   	style="@style/double_fill"
+	    android:background="@drawable/bottom_toolbar_fe"
+	   	android:baselineAligned="false" >
+		   	<ImageView android:id="@+id/tab_1"
+		        style="@style/double_wrap"
+		        android:src="@drawable/my"
+		       android:layout_weight="0.2" 
+		        />
+		   	<ImageView android:id="@+id/tab_2"
+			        style="@style/double_wrap"
+			        android:src="@drawable/daohang1"
+			             android:layout_weight="0.2"
+			        /> 
+		        
+		   	<ImageView android:id="@+id/tab_3"
+			        style="@style/double_wrap"
+			        android:src="@drawable/friends"
+			              android:layout_weight="0.2"
+			        />
+	</LinearLayout>
+	
+	<ImageView 
+		style="@style/double_wrap"
+        android:src="@drawable/arrow_right"
+        android:layout_gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

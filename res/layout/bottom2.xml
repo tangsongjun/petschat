@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout style="@style/double_fill" 
+   	 	android:background="@drawable/bottom_toolbar_fe">
+			<ImageView android:id="@+id/tab_4"
+		        style="@style/double_wrap" 
+		        android:src="@drawable/market" 
+		        android:layout_weight="0.1"
+		        /> 
+			<ImageView android:id="@+id/tab_5"
+		        style="@style/double_wrap"
+		        android:src="@drawable/experience"
+		       android:layout_weight="0.1" 
+		        />
+		
+			<ImageView android:id="@+id/tab_6"
+		        style="@style/double_wrap"
+	       		android:layout_weight="0.1" 
+		        android:src="@drawable/message1"/> 
+		        
+	</LinearLayout>
+	
+    
+   	<ImageView style="@style/double_wrap"
+	        android:src="@drawable/arrow_left"
+	        android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"/>
+<ImageView style="@style/double_wrap"
+        android:src="@drawable/arrow_right"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

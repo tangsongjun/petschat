@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/double_fill"
+    android:orientation="vertical" >
+    <RelativeLayout style="@style/double_fill"
+        android:layout_weight="1.0"
+        android:id="@+id/mainView" 
+       android:layout_gravity="center_vertical"
+        android:background="@drawable/background">   
+    </RelativeLayout>
+    
+     <android.support.v4.view.ViewPager
+        android:layout_weight="9.9"
+        android:id="@+id/viewpagerLayout"
+        android:background="@drawable/bottom_toolbar_fe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dip"/>
+     
+</LinearLayout>
