@@ -31,6 +31,7 @@
         <activity android:name=".FriendActivity"></activity>
         <activity android:name=".UserInfoActivity"></activity>
         <activity android:name=".NavigateActivity"></activity>
+        <activity android:name=".PetDetailActivity"></activity>
     </application>
 
 </manifest>

@@ -2,12 +2,15 @@ package com.bishun.pets.adapter;
 
 import java.util.ArrayList;
 
+import com.bishun.pets.PetDetailActivity;
 import com.bishun.pets.R;
 import com.bishun.pets.bussines.Pets;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
@@ -48,7 +51,7 @@ public class FriendAdapter extends BaseAdapter {
 	@Override
 	public View getView(int position, View convertView, ViewGroup parent) {
 		Myholdler myholdler = null;
-		Pets pet = mPets.get(position);
+		final Pets pet = mPets.get(position);
 		if(convertView == null){
 			convertView = mInflater.inflate(R.layout.adapter_friend, null);	
 			myholdler = new Myholdler();
@@ -64,7 +67,16 @@ public class FriendAdapter extends BaseAdapter {
 		myholdler.range.setText(pet.getRange());
 		myholdler.name.setText(pet.getName());
 		myholdler.address.setText(pet.getAddress());
-		
+		convertView.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(mContext, PetDetailActivity.class);
+				intent.putExtra("name", pet.getName());
+				mContext.startActivity(intent);
+				
+			}
+		});
 		return convertView;
 	}
 	final class Myholdler{

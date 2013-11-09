@@ -9,15 +9,15 @@
 	       <ImageView android:id="@+id/tab_7"
 	        style="@style/double_wrap"  
 	        android:src="@drawable/photo" 
-	        />
-			<!-- <ImageView
+	        android:layout_weight="0.1"/>
+			<ImageView
 		        style="@style/double_wrap"  
 		        android:visibility="invisible"
 		        android:layout_weight="0.1" /> 
 			<ImageView
 		        style="@style/double_wrap"  
 		        android:visibility="invisible"
-		        android:layout_weight="0.1"/>   -->
+		        android:layout_weight="0.1"/>  
 	</LinearLayout>
 	
 	<ImageView style="@style/double_wrap"
