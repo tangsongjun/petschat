@@ -200,7 +200,7 @@ public class BaseActivityGroup extends ActivityGroup implements OnClickListener 
 				break;
 			
 			case R.id.tab_7:
-				this.tab_7.setImageResource(R.drawable.tab_schedule);
+				this.tab_7.setImageResource(R.drawable.photo);
 				break;
 			}
 		}
@@ -227,7 +227,7 @@ public class BaseActivityGroup extends ActivityGroup implements OnClickListener 
 			break;
 		
 		case R.id.tab_7:
-			currentTab.setImageResource(R.drawable.tab_schedule_on);
+			currentTab.setImageResource(R.drawable.photo_v);
 			break;
 		}
 		
